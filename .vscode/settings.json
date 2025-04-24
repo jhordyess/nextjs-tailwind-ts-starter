@@ -1,0 +1,7 @@
+{
+  "files.associations": {
+    // Optional for VS Code and Tailwind CSS IntelliSense extension
+    // to recognize Tailwind CSS at rules in CSS files
+    "*.css": "tailwindcss"
+  }
+}
