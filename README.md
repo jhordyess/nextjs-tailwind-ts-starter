@@ -59,10 +59,10 @@ nextjs-tailwind-ts-starter/
 ├── eslint.config.js        # ESLint configuration file.
 ├── next.config.js          # Next.js configuration file.
 ├── package.json            # Project configuration and dependencies.
+├── pnpm-lock.yaml          # pnpm lock file for dependency versions.
 ├── postcss.config.mjs      # PostCSS configuration file.
 ├── README.md               # Project documentation.
 ├── tsconfig.json           # TypeScript configuration file.
-├── pnpm-lock.yaml          # pnpm lock file for dependency versions.
 ├── .husky/                 # Directory for Git hooks managed by Husky.
 │   ├── pre-push            # Pre-push hook to run linting and TypeScript checks.
 ├── src/app/                # Main application directory.
