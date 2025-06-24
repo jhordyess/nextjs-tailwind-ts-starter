@@ -39,7 +39,7 @@ cd nextjs-tailwind-ts-starter
 3. Install dependencies:
 
 ```sh
-pnpm install
+pnpm i
 ```
 
 4. Start the development server:
