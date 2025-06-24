@@ -23,7 +23,7 @@
     "build": "next build",
     "ts-check": "tsc --noEmit",
     "lint": "next lint",
-    "validate": "yarn lint && yarn ts-check",
+    "validate": "pnpm lint && pnpm ts-check",
     "format": "prettier --write .",
     "postinstall": "husky"
   },
