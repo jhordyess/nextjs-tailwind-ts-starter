@@ -2,19 +2,27 @@
   "name": "nextjs-tailwind-ts-starter",
   "private": true,
   "version": "0.0.0",
-  "packageManager": "yarn@4.9.1",
+  "packageManager": "pnpm@10.12.2",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "dependencies": {
+    "next": "15.3.4",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.1",
-    "@tailwindcss/postcss": "^4.1.4",
-    "@types/node": "^22.14.1",
-    "@types/react": "^19.1.2",
-    "@types/react-dom": "^19.1.2",
-    "eslint": "^9.25.1",
-    "eslint-config-next": "15.3.1",
+    "@tailwindcss/postcss": "^4.1.10",
+    "@types/node": "^22.15.32",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "eslint": "^9.29.0",
+    "eslint-config-next": "15.3.4",
     "husky": "^9.1.7",
-    "prettier": "^3.5.3",
-    "prettier-plugin-tailwindcss": "^0.6.11",
-    "tailwindcss": "^4.1.4",
+    "prettier": "^3.6.0",
+    "prettier-plugin-tailwindcss": "^0.6.13",
+    "tailwindcss": "^4.1.10",
     "typescript": "^5.8.3"
   },
   "scripts": {
@@ -23,13 +31,8 @@
     "build": "next build",
     "ts-check": "tsc --noEmit",
     "lint": "next lint",
-    "validate": "yarn lint && yarn ts-check",
+    "validate": "pnpm lint && pnpm ts-check",
     "format": "prettier --write .",
-    "postinstall": "husky"
-  },
-  "dependencies": {
-    "next": "15.3.1",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "prepare": "husky"
   }
 }
