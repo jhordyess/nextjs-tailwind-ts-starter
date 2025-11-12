@@ -6,6 +6,16 @@
     "node": ">=22",
     "pnpm": ">=10"
   },
+  "scripts": {
+    "start": "next start",
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "ts-check": "tsc --noEmit",
+    "lint": "next lint",
+    "validate": "pnpm lint && pnpm ts-check",
+    "format": "prettier --write .",
+    "prepare": "husky"
+  },
   "dependencies": {
     "next": "15.5.0",
     "react": "^19.2.0",
@@ -24,15 +34,5 @@
     "prettier-plugin-tailwindcss": "^0.6.14",
     "tailwindcss": "^4.1.17",
     "typescript": "^5.9.3"
-  },
-  "scripts": {
-    "start": "next start",
-    "dev": "next dev --turbopack",
-    "build": "next build",
-    "ts-check": "tsc --noEmit",
-    "lint": "next lint",
-    "validate": "pnpm lint && pnpm ts-check",
-    "format": "prettier --write .",
-    "prepare": "husky"
   }
 }
