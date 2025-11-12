@@ -10,7 +10,8 @@ const roboto = Roboto({
 })
 
 export const metadata: Metadata = {
-  title: 'Nextjs Tailwind CSS and Typescript Starter'
+  title: 'Nextjs Tailwind CSS and Typescript Starter',
+  icons: { icon: '/icon.svg' }
 }
 
 export default function RootLayout({

@@ -4,7 +4,7 @@ This is a starter project for building web applications using Next.js, Tailwind 
 
 ## Features
 
-- **Next.js**: React framework for server-side rendering and static site generation. (v. 15)
+- **Next.js**: React framework for server-side rendering and static site generation. (v. 16)
 - **React**: Fast and flexible UI library for building user interfaces. (v. 19)
 - **TypeScript**: Strongly typed JavaScript for better development experience. (v. 5)
 - **Tailwind CSS**: Utility-first CSS framework for rapid UI development. (v. 4)
@@ -16,10 +16,10 @@ This is a starter project for building web applications using Next.js, Tailwind 
 ## Prerequisites
 
 1. Install [Node.js](https://nodejs.org/en/download) (LTS version recommended).
-2. Enable Corepack to use a stable version of pnpm:
+2. Install [pnpm](https://pnpm.io/installation) globally:
 
 ```sh
-corepack enable pnpm
+npm install -g pnpm@latest-10
 ```
 
 ## Getting Started
@@ -56,8 +56,8 @@ pnpm dev
 nextjs-tailwind-ts-starter/
 ├── .gitignore              # List of files and directories to be ignored by version control.
 ├── .prettierrc.json        # Prettier configuration file.
-├── eslint.config.js        # ESLint configuration file.
-├── next.config.js          # Next.js configuration file.
+├── eslint.config.mjs        # ESLint configuration file.
+├── next.config.ts          # Next.js configuration file.
 ├── package.json            # Project configuration and dependencies.
 ├── pnpm-lock.yaml          # pnpm lock file for dependency versions.
 ├── postcss.config.mjs      # PostCSS configuration file.
@@ -65,6 +65,10 @@ nextjs-tailwind-ts-starter/
 ├── tsconfig.json           # TypeScript configuration file.
 ├── .husky/                 # Directory for Git hooks managed by Husky.
 │   ├── pre-push            # Pre-push hook to run linting and TypeScript checks.
+├── .vscode/                # VSCode workspace settings.
+│   ├── settings.json       # VSCode settings for the project.
+├── public/                 # Public assets directory.
+│   ├── icon.svg            # Sample icon.
 ├── src/app/                # Main application directory.
 │   ├── globals.css         # Global CSS styles.
 │   ├── layout.tsx          # Main layout component.
